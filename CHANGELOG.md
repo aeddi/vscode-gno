@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/aeddi/vscode-gno/compare/v1.0.0...v1.1.0) (2025-08-02)
+
+
+### Features
+
+* add a setting to toggle browser opening ([a110d73](https://github.com/aeddi/vscode-gno/commit/a110d7321b082640f153902f05635dd69d2efb79))
+* add gnodev button ([4dd4cf2](https://github.com/aeddi/vscode-gno/commit/4dd4cf271791f7c7606c401fbf959d324680d863))
+* add gnodev start and stop commands ([c5f1684](https://github.com/aeddi/vscode-gno/commit/c5f1684f9f1bb16a4f309138511a66bb8b587f9a))
+* add more browser opening options ([81199d2](https://github.com/aeddi/vscode-gno/commit/81199d2c36b4c97c870fa95b73716e8496669bc9))
+* custom WebView + clean refactor ([9fdbcfb](https://github.com/aeddi/vscode-gno/commit/9fdbcfbb7a6dbb32193b33cb626d41e7fd5ecb46))
+* improve logging + refactor ([9035fb9](https://github.com/aeddi/vscode-gno/commit/9035fb954bc4d23b220dc2657c2a1d157cd0e0e1))
+
 # 1.0.0 (2025-08-02)
 
 
