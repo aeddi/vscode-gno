@@ -14,7 +14,7 @@ import { formatGoVersion, GoEnvironmentOption, terminalCreationListener } from '
 import { GoDocumentSelector, isGoFile } from './gnoMode';
 import { runGoEnv } from './gnoModules';
 import { allToolsInformation } from './gnoToolsInformation';
-import { getGnoVersion } from './util';
+import { getGnoVersion } from './utils';
 import { GoExtensionContext } from './context';
 import { CommandFactory } from './commands';
 import { LanguageClient, State } from 'vscode-languageclient/node';

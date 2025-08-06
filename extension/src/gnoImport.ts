@@ -12,7 +12,7 @@ import vscode = require('vscode');
 import { ExecuteCommandRequest, ExecuteCommandParams } from 'vscode-languageserver-protocol';
 import { toolExecutionEnvironment } from './gnoEnv';
 import { promptForMissingTool } from './gnoInstallTools';
-import { getBinPath, getImportPath, parseFilePrelude } from './util';
+import { getBinPath, getImportPath, parseFilePrelude } from './utils';
 import { getEnvPath, getCurrentGoRoot } from './utils/pathUtils';
 import { GoExtensionContext } from './context';
 import { CommandFactory } from './commands';

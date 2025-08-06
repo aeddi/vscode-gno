@@ -15,7 +15,7 @@ import fs = require('fs');
 
 import { toolExecutionEnvironment } from './gnoEnv';
 import { GoDocumentSymbolProvider } from './gnoDocumentSymbols';
-import { getBinPath, LineBuffer, resolvePath } from './util';
+import { getBinPath, LineBuffer, resolvePath } from './utils';
 import { parseEnvFile } from './utils/envUtils';
 import { getEnvPath } from './utils/pathUtils';
 import { killProcessTree } from './utils/processUtils';

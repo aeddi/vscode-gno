@@ -6,7 +6,7 @@
 import * as vscode from 'vscode';
 import { getGnoConfig } from './config';
 import { toolExecutionEnvironment } from './gnoEnv';
-import { getBinPath } from './util';
+import { getBinPath } from './utils';
 
 const TASK_TYPE = 'go';
 type GoCommand = 'build' | 'test'; // TODO(hyangah): run, install?

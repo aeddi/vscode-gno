@@ -10,7 +10,7 @@ import moment = require('moment');
 import semver = require('semver');
 import { getFormatTool, usingCustomFormatTool } from './language/legacy/gnoFormat';
 import { allToolsInformation } from './gnoToolsInformation';
-import { GoVersion } from './util';
+import { GoVersion } from './utils';
 
 export interface Tool {
 	name: string;

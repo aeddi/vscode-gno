@@ -7,7 +7,7 @@
 
 import vscode = require('vscode');
 import { getGnoConfig } from './config';
-import { getCurrentGoPath, getToolsGopath, resolvePath, substituteEnv } from './util';
+import { getCurrentGoPath, getToolsGopath, resolvePath, substituteEnv } from './utils';
 import { dirExists } from './utils/pathUtils';
 import { getFromGlobalState, updateGlobalState } from './stateUtils';
 import { outputChannel } from './gnoStatus';

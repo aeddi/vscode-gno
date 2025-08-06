@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import fetch from 'node-fetch';
-import { joinPath } from '../util';
+import { joinPath } from '../utils';
 import { defaultGroup, outputChannel } from './logs';
 import { GnodevAddress } from './address';
 import path from 'path';

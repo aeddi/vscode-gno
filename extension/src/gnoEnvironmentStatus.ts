@@ -17,7 +17,7 @@ import { getGnoConfig, extensionInfo } from './config';
 import { toolInstallationEnvironment } from './gnoEnv';
 import { addGoStatus, goEnvStatusbarItem, outputChannel, removeGoStatus } from './gnoStatus';
 import { getFromGlobalState, getFromWorkspaceState, updateGlobalState, updateWorkspaceState } from './stateUtils';
-import { getBinPath, getCheckForToolsUpdatesConfig, getGoVersion, GoVersion } from './util';
+import { getBinPath, getCheckForToolsUpdatesConfig, getGoVersion, GoVersion } from './utils';
 import {
 	correctBinname,
 	executableFileExists,
@@ -184,7 +184,10 @@ export async function setSelectedGo(goOption: vscode.QuickPickItem, promptReload
 		let newGo: GoVersion | undefined;
 		try {
 			newGo = await getGoVersion(newGoBin);
-			await updateWorkspaceState('selectedGno', new GoEnvironmentOption(newGo.binaryPath, formatGoVersion(newGo)));
+			await updateWorkspaceState(
+				'selectedGno',
+				new GoEnvironmentOption(newGo.binaryPath, formatGoVersion(newGo))
+			);
 		} catch (e) {
 			if (!newGo || !newGo.isValid()) {
 				vscode.window.showErrorMessage(`failed to get "${newGoBin} version", invalid Gno binary:\n${e}`);

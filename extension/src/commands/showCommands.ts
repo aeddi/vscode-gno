@@ -6,7 +6,7 @@
 import * as vscode from 'vscode';
 
 import { CommandFactory } from '.';
-import { getExtensionCommands } from '../util';
+import { getExtensionCommands } from '../utils';
 
 export const showCommands: CommandFactory = () => {
 	return () => {

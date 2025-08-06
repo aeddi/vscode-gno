@@ -11,7 +11,7 @@ import { getGnoConfig } from './config';
 import { toolExecutionEnvironment } from './gnoEnv';
 import { isModSupported } from './gnoModules';
 import { outputChannel } from './gnoStatus';
-import { getBinPath, getCurrentGoPath, getModuleCache } from './util';
+import { getBinPath, getCurrentGoPath, getModuleCache } from './utils';
 import { getEnvPath, getCurrentGoRoot, getCurrentGoWorkspaceFromGOPATH } from './utils/pathUtils';
 
 export const installCurrentPackage: CommandFactory = () => async () => {

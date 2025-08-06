@@ -16,7 +16,7 @@ import { toolExecutionEnvironment } from './gnoEnv';
 import { promptForMissingTool } from './gnoInstallTools';
 import { GoDocumentSymbolProvider } from './gnoDocumentSymbols';
 import { outputChannel } from './gnoStatus';
-import { getBinPath, resolvePath } from './util';
+import { getBinPath, resolvePath } from './utils';
 import { CommandFactory } from './commands';
 import { GoExtensionContext } from './context';
 
@@ -250,3 +250,4 @@ async function getFunctions(goCtx: GoExtensionContext, doc: vscode.TextDocument)
 		[vscode.SymbolKind.Function, vscode.SymbolKind.Method].includes(sym.kind)
 	);
 }
+

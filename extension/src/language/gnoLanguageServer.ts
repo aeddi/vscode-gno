@@ -46,10 +46,10 @@ import {
 	getGoVersion,
 	getWorkspaceFolderPath,
 	removeDuplicateDiagnostics,
-    daysBetween,
-    timeDay,
-    timeMinute
-} from '../util';
+	daysBetween,
+	timeDay,
+	timeMinute
+} from '../utils';
 import { getToolFromToolPath } from '../utils/pathUtils';
 import { CompletionItemKind, FoldingContext } from 'vscode';
 import { ProvideFoldingRangeSignature } from 'vscode-languageclient/lib/common/foldingRange';
@@ -232,12 +232,7 @@ export function buildLanguageClientOption(
 }
 
 export class GoLanguageClient extends LanguageClient implements vscode.Disposable {
-	constructor(
-		id: string,
-		name: string,
-		serverOptions: ServerOptions,
-		clientOptions: LanguageClientOptions,
-	) {
+	constructor(id: string, name: string, serverOptions: ServerOptions, clientOptions: LanguageClientOptions) {
 		super(id, name, serverOptions, clientOptions);
 	}
 }
@@ -522,7 +517,7 @@ export async function buildLanguageClient(
 					}
 				}
 			}
-		} as LanguageClientOptions,
+		} as LanguageClientOptions
 	);
 
 	return c;

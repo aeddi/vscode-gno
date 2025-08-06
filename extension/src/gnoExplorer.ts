@@ -7,7 +7,7 @@ import vscodeUri = require('vscode-uri');
 import os = require('os');
 import path = require('path');
 import { getGnoConfig, getGnoplsConfig } from './config';
-import { getBinPath } from './util';
+import { getBinPath } from './utils';
 import { getConfiguredTools } from './gnoTools';
 import { inspectGoToolVersion } from './gnoInstallTools';
 import { runGoEnv } from './gnoModules';

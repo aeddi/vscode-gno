@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as readline from 'readline';
 import { spawn, ChildProcess } from 'child_process';
-import { getBinPath, joinPath } from '../util';
+import { getBinPath, joinPath } from '../utils';
 import { GnodevAddress } from './address';
 import { outputChannel, defaultGroup, parseGnodevLog } from './logs';
 

@@ -41,7 +41,7 @@ import {
 	updateGlobalState
 } from './stateUtils';
 import { cancelRunningTests, showTestOutput } from './testUtils';
-import { cleanupTempDir, getBinPath, getToolsGopath } from './util';
+import { cleanupTempDir, getBinPath, getToolsGopath } from './utils';
 import { clearCacheForTools } from './utils/pathUtils';
 import { WelcomePanel } from './welcome';
 import vscode = require('vscode');

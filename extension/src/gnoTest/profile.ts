@@ -18,7 +18,7 @@ import {
 import vscode = require('vscode');
 import { promises as fs } from 'fs';
 import { ChildProcess, spawn } from 'child_process';
-import { getBinPath, getTempFilePath } from '../util';
+import { getBinPath, getTempFilePath } from '../utils';
 import { GoTestResolver } from './resolve';
 import { killProcessTree } from '../utils/processUtils';
 import { correctBinname } from '../utils/pathUtils';
