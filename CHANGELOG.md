@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/aeddi/vscode-gno/compare/v1.1.0...v1.2.0) (2025-08-06)
+
+
+### Features
+
+* improve controls bar ([c791014](https://github.com/aeddi/vscode-gno/commit/c791014efcf537a47a19d3306c6250c8d1bc3fa2))
+* inject iframe script into gnodev ([ae9d9ef](https://github.com/aeddi/vscode-gno/commit/ae9d9efbf62628bb3d899cc5fbcf91a4b443282b))
+
 # [1.1.0](https://github.com/aeddi/vscode-gno/compare/v1.0.0...v1.1.0) (2025-08-02)
 
 
