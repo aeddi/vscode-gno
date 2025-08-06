@@ -25,7 +25,7 @@ export const startGnoDevServer: CommandFactory = (ctx) => {
 			}
 
 			// Init the gnodev process.
-			currentGnoDevServer = { process: new GnodevProcess() };
+			currentGnoDevServer = { process: new GnodevProcess(ctx) };
 
 			// When the gnodev process is ready, open the webview if configured to do so.
 			currentGnoDevServer.process.onProcessReady((addr: GnodevAddress) => {

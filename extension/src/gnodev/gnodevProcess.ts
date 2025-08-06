@@ -1,11 +1,12 @@
 import * as vscode from 'vscode';
 import * as readline from 'readline';
 import { spawn, ChildProcess } from 'child_process';
-import { getBinPath } from '../util';
+import { getBinPath, joinPath } from '../util';
 import { GnodevAddress } from './address';
 import { outputChannel, defaultGroup, parseGnodevLog } from './logs';
 
 export class GnodevProcess extends vscode.Disposable {
+	private _context: vscode.ExtensionContext;
 	private _process: ChildProcess | undefined;
 	private _onProcessReady = new vscode.EventEmitter<GnodevAddress>();
 	private _onProcessExit = new vscode.EventEmitter<Error | undefined>();
@@ -13,8 +14,9 @@ export class GnodevProcess extends vscode.Disposable {
 	public readonly onProcessReady = this._onProcessReady.event;
 	public readonly onProcessExit = this._onProcessExit.event;
 
-	constructor() {
+	constructor(context: vscode.ExtensionContext) {
 		super(() => this.dispose());
+		this._context = context;
 	}
 
 	public get process(): ChildProcess | undefined {
@@ -49,6 +51,10 @@ export class GnodevProcess extends vscode.Disposable {
 
 			// Force gnodev log format to JSON for better parsing.
 			gnodevFlags.push('-log-format', 'json');
+
+			// Inject gnodev iframe script.
+			const scriptPath = joinPath(this._context.extensionUri, 'media', 'gnodev-iframe.js');
+			gnodevFlags.push('-web-custom-js', scriptPath.fsPath);
 
 			// Spawn the gnodev process with the specified flags and in the workspace folder.
 			this._process = spawn(gnodevBinPath, gnodevFlags, {

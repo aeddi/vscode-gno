@@ -58,17 +58,18 @@ export class GnodevWebView extends vscode.Disposable {
 		// Set up message handling for gnodev controls.
 		this._panel.webview.onDidReceiveMessage((e) => {
 			switch (e.type) {
-				// This control reloads gnodev packages.
-				case 'reload':
-					fetch(path.join(externalUri, 'reload'));
-					break;
 				// This control resets the gnodev realms state.
 				case 'reset':
 					fetch(path.join(externalUri, 'reset'));
 					break;
 				// This control opens gnodev in the external browser.
 				case 'openExternal':
-					vscode.env.openExternal(this._currAddr!.toUri());
+					try {
+						const url = vscode.Uri.parse(e.url);
+						vscode.env.openExternal(url);
+					} catch {
+						// Ignore
+					}
 					break;
 			}
 		});
@@ -122,7 +123,10 @@ export class GnodevWebView extends vscode.Disposable {
 				<link rel="stylesheet" type="text/css" href="${codiconCss}">
 			</head>
 			<body>
-				<iframe src="${url}" sandbox="allow-scripts allow-forms allow-same-origin"></iframe>
+				<iframe 
+					id="gnodev-iframe"
+					src="${url}"
+					sandbox="allow-scripts allow-forms allow-same-origin"></iframe>
 
 				<div class="floating-controls">
 					<button
