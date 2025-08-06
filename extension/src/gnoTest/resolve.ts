@@ -20,7 +20,7 @@ import path = require('path');
 import vscode = require('vscode');
 import { outputChannel } from '../gnoStatus';
 import { getModFolderPath } from '../gnoModules';
-import { getCurrentGoPath } from '../util';
+import { getCurrentGoPath } from '../utils';
 import { getGnoConfig } from '../config';
 import { dispose, disposeIfEmpty, FileSystem, GoTest, GoTestKind, findModuleName, isInTest, Workspace } from './utils';
 import { walk, WalkStop } from './walk';

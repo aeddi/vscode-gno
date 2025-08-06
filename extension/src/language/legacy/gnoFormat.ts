@@ -12,7 +12,7 @@ import vscode = require('vscode');
 import { getGnoConfig } from '../../config';
 import { toolExecutionEnvironment } from '../../gnoEnv';
 import { promptForMissingTool, promptForUpdatingTool } from '../../gnoInstallTools';
-import { getBinPath, resolvePath } from '../../util';
+import { getBinPath, resolvePath } from '../../utils';
 import { killProcessTree } from '../../utils/processUtils';
 
 export class GoDocumentFormattingEditProvider implements vscode.DocumentFormattingEditProvider {

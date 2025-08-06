@@ -7,7 +7,7 @@ import * as vscode from 'vscode';
 
 import { CommandFactory } from '.';
 import { getGnoConfig } from '../config';
-import { getCurrentGoPath as utilGetCurrentGoPath, getWorkspaceFolderPath } from '../util';
+import { getCurrentGoPath as utilGetCurrentGoPath, getWorkspaceFolderPath } from '../utils';
 
 export const getCurrentGoPath: CommandFactory = () => {
 	return () => {

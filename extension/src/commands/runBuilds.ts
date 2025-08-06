@@ -7,7 +7,7 @@ import * as vscode from 'vscode';
 
 import { check } from '../gnoCheck';
 import { CommandFactory } from '.';
-import { handleDiagnosticErrors } from '../util';
+import { handleDiagnosticErrors } from '../utils';
 
 export const runBuilds: CommandFactory = (ctx, goCtx) => (
 	document: vscode.TextDocument,

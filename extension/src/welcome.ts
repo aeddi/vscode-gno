@@ -14,7 +14,7 @@ import { GoExtensionContext } from './context';
 import { extensionInfo, getGnoConfig } from './config';
 import { getFromGlobalState, updateGlobalState } from './stateUtils';
 import { createRegisterCommand } from './commands';
-import { joinPath } from './util';
+import { joinPath } from './utils';
 
 export class WelcomePanel {
 	public static activate(ctx: vscode.ExtensionContext, goCtx: GoExtensionContext) {

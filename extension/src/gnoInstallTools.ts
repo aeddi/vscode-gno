@@ -28,7 +28,7 @@ import {
 	getWorkspaceFolderPath,
 	GoVersion,
 	rmdirRecursive
-} from './util';
+} from './utils';
 import { getEnvPath, getCurrentGoRoot, setCurrentGoRoot } from './utils/pathUtils';
 import util = require('util');
 import vscode = require('vscode');

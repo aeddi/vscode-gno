@@ -11,7 +11,7 @@ import vscode = require('vscode');
 import vscodeUri = require('vscode-uri');
 import { toolExecutionEnvironment } from './gnoEnv';
 import { outputChannel } from './gnoStatus';
-import { getBinPath, getGoVersion, getModuleCache, getWorkspaceFolderPath } from './util';
+import { getBinPath, getGoVersion, getModuleCache, getWorkspaceFolderPath } from './utils';
 import { getEnvPath, fixDriveCasingInWindows, getCurrentGoRoot } from './utils/pathUtils';
 import { CommandFactory } from './commands';
 export let GO111MODULE: string | undefined;

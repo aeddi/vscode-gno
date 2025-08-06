@@ -7,7 +7,7 @@
 
 import cp = require('child_process');
 import { QuickPickItem } from 'vscode';
-import { getBinPath } from './util';
+import { getBinPath } from './utils';
 import { lsofDarwinCommand, parseLsofProcesses } from './utils/lsofProcessParser';
 import { getEnvPath, getCurrentGoRoot } from './utils/pathUtils';
 import { parsePsProcesses, psDarwinCommand, psLinuxCommand } from './utils/psProcessParser';

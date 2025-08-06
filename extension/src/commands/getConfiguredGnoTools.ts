@@ -11,7 +11,7 @@ import { CommandFactory } from '.';
 import { getGnoConfig, getGnoplsConfig } from '../config';
 import { inspectGoToolVersion } from '../gnoInstallTools';
 import { getConfiguredTools } from '../gnoTools';
-import { getBinPath, getCurrentGoPath, getGoEnv, getGoVersion, getToolsGopath } from '../util';
+import { getBinPath, getCurrentGoPath, getGoEnv, getGoVersion, getToolsGopath } from '../utils';
 import { getEnvPath, initialEnvPath, getCurrentGoRoot } from '../utils/pathUtils';
 
 export const getConfiguredGoTools: CommandFactory = () => {

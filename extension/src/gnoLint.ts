@@ -10,7 +10,7 @@ import { getGnoConfig, getGnoplsConfig } from './config';
 import { toolExecutionEnvironment } from './gnoEnv';
 import { diagnosticsStatusBarItem, outputChannel } from './gnoStatus';
 import { goplsStaticcheckEnabled } from './gnoTools';
-import { getWorkspaceFolderPath, handleDiagnosticErrors, ICheckResult, resolvePath, runTool } from './util';
+import { getWorkspaceFolderPath, handleDiagnosticErrors, ICheckResult, resolvePath, runTool } from './utils';
 
 /**
  * Runs linter on the current file, package or workspace.

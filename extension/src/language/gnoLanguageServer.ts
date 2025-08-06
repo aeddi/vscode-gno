@@ -49,7 +49,7 @@ import {
 	daysBetween,
 	timeDay,
 	timeMinute
-} from '../util';
+} from '../utils';
 import { getToolFromToolPath } from '../utils/pathUtils';
 import { CompletionItemKind, FoldingContext } from 'vscode';
 import { ProvideFoldingRangeSignature } from 'vscode-languageclient/lib/common/foldingRange';

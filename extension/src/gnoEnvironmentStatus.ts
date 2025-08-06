@@ -17,7 +17,7 @@ import { getGnoConfig, extensionInfo } from './config';
 import { toolInstallationEnvironment } from './gnoEnv';
 import { addGoStatus, goEnvStatusbarItem, outputChannel, removeGoStatus } from './gnoStatus';
 import { getFromGlobalState, getFromWorkspaceState, updateGlobalState, updateWorkspaceState } from './stateUtils';
-import { getBinPath, getCheckForToolsUpdatesConfig, getGoVersion, GoVersion } from './util';
+import { getBinPath, getCheckForToolsUpdatesConfig, getGoVersion, GoVersion } from './utils';
 import {
 	correctBinname,
 	executableFileExists,

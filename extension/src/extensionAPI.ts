@@ -5,7 +5,7 @@
 
 import { Uri } from 'vscode';
 import { CommandInvocation, ExtensionAPI } from './export';
-import { getBinPathWithExplanation } from './util';
+import { getBinPathWithExplanation } from './utils';
 
 const api: ExtensionAPI = {
 	settings: {

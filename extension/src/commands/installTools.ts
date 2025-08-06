@@ -6,7 +6,7 @@
 import { CommandFactory } from '.';
 import { installAllTools, installTools as goInstallTools } from '../gnoInstallTools';
 import { ToolAtVersion } from '../gnoTools';
-import { getGoVersion } from '../util';
+import { getGoVersion } from '../utils';
 
 export const installTools: CommandFactory = () => {
 	return async (args: ToolAtVersion[]) => {

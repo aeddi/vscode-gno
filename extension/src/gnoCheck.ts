@@ -14,7 +14,7 @@ import { goLint } from './gnoLint';
 import { isModSupported } from './gnoModules';
 import { diagnosticsStatusBarItem, outputChannel } from './gnoStatus';
 import { getTestFlags, goTest, TestConfig } from './testUtils';
-import { ICheckResult } from './util';
+import { ICheckResult } from './utils';
 import { GoExtensionContext } from './context';
 
 const STATUS_BAR_ITEM_NAME = 'Gno Test';

@@ -3,7 +3,7 @@ import cp = require('child_process');
 import { CommandFactory } from './commands';
 import { getGnoConfig } from './config';
 import { toolExecutionEnvironment } from './gnoEnv';
-import { getBinPath } from './util';
+import { getBinPath } from './utils';
 import { diagnosticsStatusBarItem, outputChannel } from './gnoStatus';
 
 // Constants
