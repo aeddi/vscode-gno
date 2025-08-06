@@ -9,7 +9,6 @@
 
 import cp = require('child_process');
 import fs = require('fs');
-import moment = require('moment');
 import path = require('path');
 import semver = require('semver');
 import util = require('util');
@@ -32,6 +31,7 @@ import {
 	ResponseError,
 	RevealOutputChannelOn
 } from 'vscode-languageclient';
+import moment from 'moment';
 import { LanguageClient, ServerOptions } from 'vscode-languageclient/node';
 import { getGnoConfig, getGnoplsConfig, extensionInfo } from '../config';
 import { toolExecutionEnvironment } from '../gnoEnv';

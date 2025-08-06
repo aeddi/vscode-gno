@@ -29,17 +29,10 @@ import {
 	GoVersion,
 	rmdirRecursive
 } from './utils';
-import {
-	getEnvPath,
-	getCurrentGoRoot,
-	setCurrentGoRoot,
-	correctBinname,
-	executableFileExists
-} from './utils/pathUtils';
+import { getEnvPath, getCurrentGoRoot, setCurrentGoRoot } from './utils/pathUtils';
 import util = require('util');
 import vscode = require('vscode');
 import { RestartReason } from './language/gnoLanguageServer';
-import { allToolsInformation } from './gnoToolsInformation';
 
 const STATUS_BAR_ITEM_NAME = 'Gno Tools';
 

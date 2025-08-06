@@ -250,4 +250,3 @@ async function getFunctions(goCtx: GoExtensionContext, doc: vscode.TextDocument)
 		[vscode.SymbolKind.Function, vscode.SymbolKind.Method].includes(sym.kind)
 	);
 }
-
